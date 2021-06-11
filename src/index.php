@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Simple PHP App</title>
+        <title>Blue/Green Test</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <style>body {margin-top: 40px; background-color: #333;}</style>
@@ -15,15 +15,8 @@
     <body>
         <div class="container">
             <div class="hero-unit">
-                <h1>Simple PHP App</h1>
-                <h2>Congratulations</h2>
+                <h1>Blue/Green Test</h1>
                 <p>111111111111</p>
-                <?php
-                        $myfile = fopen("/var/www/my-vol/date", "r") or die("");
-                        echo fread($myfile,filesize("/var/www/my-vol/date"));
-                        fclose($myfile);
-                ?>
-
             </div>
         </div>
 
